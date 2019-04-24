@@ -1,12 +1,12 @@
 <template>
   <div>
-    <main-header></main-header>
+    <main-header class="mb-lg-5"></main-header>
       <!--<content>-->
           <!---->
       <!--</content>-->
       <nuxt />
 
-      <main-footer></main-footer>
+      <main-footer class="mt-lg-5"></main-footer>
   </div>
 </template>
 <script>

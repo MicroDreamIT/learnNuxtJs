@@ -24,10 +24,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto ">
                         <li class="nav-item pr-4">
-                            <nuxt-link class="nav-link" to="/">Discover <span class="sr-only">(current)</span></nuxt-link>
+                            <nuxt-link class="nav-link" to="/">Home <span class="sr-only">(current)</span></nuxt-link>
                         </li>
                         <li class="nav-item">
-                            <nuxt-link class="nav-link" to="/product">Moments</nuxt-link>
+                            <nuxt-link class="nav-link" to="product">Product</nuxt-link>
                         </li>
                     </ul>
 
