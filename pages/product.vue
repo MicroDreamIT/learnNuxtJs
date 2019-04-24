@@ -1,10 +1,8 @@
 <template>
     <div>
-        <section class="container">
-            <h3>I am content</h3>
+        <section class="container mt-4">
+            <h3>I am prodcut page</h3>
         </section>
-
-    
     </div>
 </template>
 

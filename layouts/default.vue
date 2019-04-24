@@ -1,19 +1,18 @@
 <template>
   <div>
     <main-header></main-header>
-      <!--<main-content>-->
-
-      <!--</main-content>-->
-
-
+      <!--<content>-->
+          <!---->
+      <!--</content>-->
       <nuxt />
+
       <main-footer></main-footer>
   </div>
 </template>
 <script>
     import mainHeader from '~/components/header.vue'
     import mainFooter from '~/components/footer.vue'
-//    import mainContent from '~/components/content.vue'
+
 
     export default {
 
