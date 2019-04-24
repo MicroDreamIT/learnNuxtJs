@@ -38,7 +38,6 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-      { src: '~/plugins/mdbvue', ssr: false }
   ],
 
   /*
@@ -60,6 +59,5 @@ module.exports = {
       transpile: [
           'mdbvue'
       ],
-      vendor: ['mdbvue']
   }
 }
