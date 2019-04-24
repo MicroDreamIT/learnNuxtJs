@@ -19,7 +19,7 @@
                         <h5>{{product.name}}</h5>
                     </div>
                     <div v-if="selectedSize.hasOwnProperty('id')">
-                        price: <strike>{{withDiscountPrice}}</strike> <strong class="text-danger">{{withoutDiscountPrice}}</strong> <strong>{{selectedSize.discount? selectedSize.discount+'% off':''}}</strong>
+                        <strong class="text-danger ">{{withoutDiscountPrice}}</strong> <strike>{{withDiscountPrice}}</strike> <strong>{{selectedSize.discount? selectedSize.discount+'% off':''}}</strong>
                     </div>
                     <hr>
                     <div class="form-group">
@@ -43,7 +43,7 @@
 
 <script>
     export default {
-        name: "about",
+        name: "product",
         data(){
             return {
                 images:[],
