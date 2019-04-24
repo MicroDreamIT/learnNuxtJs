@@ -18,6 +18,7 @@
     "express": "^4.16.4",
     "mdbvue": "^5.2.0",
     "nuxt": "^2.4.0",
+    "vue-gallery": "^2.0.0",
     "vue-notifications": "^0.9.0"
   },
   "devDependencies": {
