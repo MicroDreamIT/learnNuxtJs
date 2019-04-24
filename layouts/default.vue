@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main-header class="mb-lg-5"></main-header>
+    <main-header class="own-mb"></main-header>
       <!--<content>-->
           <!---->
       <!--</content>-->
@@ -29,3 +29,8 @@
     }
 
 </script>
+<style scoped>
+    .own-mb{
+        margin-bottom: 100px!important;
+    }
+</style>

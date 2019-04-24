@@ -19,7 +19,10 @@
                         <h5>{{product.name}}</h5>
                     </div>
                     <div v-if="selectedSize.hasOwnProperty('id')">
-                        <strong class="text-danger ">{{withoutDiscountPrice}}</strong> <strike>{{withDiscountPrice}}</strike> <strong>{{selectedSize.discount? selectedSize.discount+'% off':''}}</strong>
+                        <strong class="text-danger ">
+                            {{withoutDiscountPrice}}</strong>
+                        <strike>{{withDiscountPrice}}</strike>
+                        <strong>{{selectedSize.discount? selectedSize.discount+'% off':''}}</strong>
                     </div>
                     <hr>
                     <div class="form-group">
@@ -27,11 +30,13 @@
                             <strong>Size</strong>
                         </label>
                         <select v-model="selectedSize" class="form-control">
-                            <option v-for="(size, index) in product.size" :key="size.id" :value="size">{{size.name}}</option>
+                            <option v-for="(size, index) in product.size"
+                                    :key="size.id" :value="size">{{size.name}}</option>
                         </select>
                     </div>
                     <div>
-                        <button @click="addToCart(selectedSize)" class="btn btn-block purple-gradient">add to cart</button>
+                        <button @click="addToCart(selectedSize)"
+                                class="btn btn-block purple-gradient">add to cart</button>
                     </div>
                 </div>
             </div>
