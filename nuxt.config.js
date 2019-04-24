@@ -15,7 +15,9 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css' },
+      // { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css' }
     ]
   },
 
@@ -28,6 +30,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
+      'bootstrap-css-only/css/bootstrap.min.css',
+      'mdbvue/build/css/mdb.css'
   ],
 
   /*
@@ -51,7 +55,9 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-    }
+      extend(config, ctx) {},
+      transpile: [
+          'mdbvue'
+      ]
   }
 }
