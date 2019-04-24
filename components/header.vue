@@ -67,6 +67,9 @@
         background:#ed54a4!important;
         color: white;
         text-align: right;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
     }
     .header-top span:nth-child(1){
         padding-right: 15px;

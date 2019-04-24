@@ -44,11 +44,12 @@
     }
     .footer-content ul{
         display: flex;
-        padding-top: 16px;
+        padding-top: 17px;
     }
     .footer-content ul li a{
         padding-right:20px;
         color: #a4a4a4!important;
+        font-size: 12px;
 
 
     }
@@ -58,6 +59,7 @@
 
     }
     .footer-content span{
-        padding-top: 16px;
+        padding-top: 22px;
+        font-size: 12px;
     }
 </style>
