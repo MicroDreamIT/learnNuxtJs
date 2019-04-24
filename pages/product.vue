@@ -52,6 +52,7 @@
                 product:{
                     id:1,
                     name:'Navy Fish Print Half Sleeves T-Shirt And Short Set',
+                    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     images: [
                         'https://dummyimage.com/800/ffffff/000000',
                         'https://dummyimage.com/800/ffffff/000000',
@@ -77,6 +78,14 @@
 
                 return price - (price*discount/100)
             },
+            metaTitle(){
+                //according to seo title size
+                return this.product.name.split(" ").splice(0,15).join(" ")
+            },
+            metaDescription(){
+                //according to seo description size
+                return this.product.name.split(" ").splice(0,150).join(" ")
+            }
 
         },
         created(){
@@ -85,9 +94,9 @@
         },
         head(){
             return {
-                title:'hello I am about',
+                title:this.metaTitle,
                 meta:[
-                    {name:'description', content:'my custom description'}
+                    {name:'description', content:this.metaDescription}
                 ]
             }
         },
